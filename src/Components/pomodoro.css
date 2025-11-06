@@ -1,3 +1,19 @@
+@import "tailwindcss";
+
+
+/* Define color variables */
+:root {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #131313;
+  --color-text-light: #414142;
+  --color-text-dark: #d8dadc;
+}
+
+ /* Dark mode class sets the dark colors */ 
+.dark {
+  --color-bg-light: #111112;
+  --color-text-light: #e2e8f0;
+}
 
 .pomo-box {
     height: 100%;
