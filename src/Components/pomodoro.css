@@ -1,0 +1,45 @@
+
+.pomo-box {
+    height: 100%;
+    width: 100%;
+    background-color: #a9a9a923;
+}
+
+.pomo-outer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomo-boxP {
+    height: 90%;
+    width: 28%;
+    padding: 25px 5px;
+    background-color: rgba(186, 186, 186, 0.219);
+}
+
+.pomo-outer-box {
+    height: 100%;
+}
+
+.focusTime {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.add-one-task input {
+    border-bottom: 1px solid #b6b5b791;
+}
+
+.add-one-task input:focus {
+    border-bottom: 1px solid #6759ff79;
+}
+
+.music-box {
+    padding-left: 20px;
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 1px 2px 4px 3px rgba(199, 199, 199, 0.163);
+} 

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Light & Dark mode variables */
+:root {
+  --color-bg-light: #f2f2f2;
+  --color-bg-dark: #131313;  
+  --color-text-light: #18212f;
+  --color-text-dark: #e2e8f0;
+}
+
+/* Dark mode class sets the dark colors */
+.dark {
+  --color-bg-light: #111112;
+  --color-text-light: #e2e8f0;
+}
+
+
+/* Body defaults */
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}

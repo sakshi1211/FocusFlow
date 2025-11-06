@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Define color variables */
+:root {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #131313;
+  --color-text-light: #414142;
+  --color-text-dark: #d8dadc;
+}
+
+ /* Dark mode class sets the dark colors */ 
+.dark {
+  --color-bg-light: #111112;
+  --color-text-light: #e2e8f0;
+}
+
+
+.logo {
+  width: 150px;
+}
+
+.profile-logo {
+  width: 24px;
+  margin-right: 8px;
+}
+
+nav {
+  box-shadow: 0px 2px 10px 0px rgba(190, 190, 190, 0.75);
+}
+
+.dark nav{
+  box-shadow: 0px 3px 10px 0px rgba(49, 49, 49, 0.75);
+}
+
+.profile-btn{
+  background-color: #9f9f9f2d;
+  padding: 7px 10px;
+  font-weight: 500;
+  border-radius: 7px;
+}

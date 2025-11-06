@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* Define color variables */
+:root {
+  --color-bg-light: #f2f2f2;
+  --color-bg-dark: #131313;
+  --color-text-light: #272727;
+  --color-text-dark: #dddede;
+}
+
+/* Dark mode class sets the dark colors */
+.dark {
+  --color-bg-light: #111112;
+  --color-text-light: #e2e8f0;
+}
+
+* {
+  overflow: hidden;
+}
+
+.dash-root {
+  /* box-sizing: border-box; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash-main-box {
+  height: 82vh;
+  width: 98%;
+}
+
+.Li-items {
+  width: 98%;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.dark .Li-items {
+  border: 1px solid rgba(57, 56, 56, 0.495);
+}
+
+.left-inner-box {
+  height: 95%;
+  width: 98%;
+  border-right: 1px solid rgba(99, 99, 99, 0.343);
+}
+
+.add-task-box {
+  overflow-y: scroll;
+  height: 82%;
+  width: 95%;
+}
+
+.add-task-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.add-task-box:hover::-webkit-scrollbar {
+  width: 5px;
+}
+
+.add-task-box::-webkit-scrollbar-thumb {
+  background-color: rgb(226, 227, 227);
+}
+
+.dark .add-task-box::-webkit-scrollbar-thumb {
+  background-color: rgba(150, 150, 150, 0.362);
+}
+
+.input-task {
+  width: 92%;
+  border-bottom: 1px solid #bebebe;
+}
+
+.dark .input-task {
+  border-bottom: 1px solid #272727;
+}
+
+.add-task-box input:focus {
+  border-bottom: 1px solid #6759ff79;
+}
+
+.boxShadow {
+  border: 0.5px solid rgb(219, 219, 219);
+  box-shadow: 1px 2px 8px 1px rgba(56, 56, 56, 0.1);
+}
+
+.dark .boxShadow {
+  border: none;
+  box-shadow: 2px 1px 4px 2px rgba(209, 209, 209, 0.1);
+}
+
+.left-box {
+  width: 65%;
+}
+
+.right-box {
+  width: 35%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pomodoro {
+  height: 40%;
+  width: 80%;
+}
+
+.task-text {
+  width: 90%;
+}
+
+.task-text span {
+  width: 80%;
+}
+
+/* Music */
+
+.dash-music{
+  width: 80%;
+  height: 25%;
+  padding: 5px;
+}
+
+.dash-progress{
+  width: 80%;
+  height: 27%;
+  padding: 5px;
+}
+
+.music-main-box {
+  width: 90%;
+}
+
+.musicH1 {
+  width: 80%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+}

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode manually (v4+ trick) */
+/* @plugin "@tailwindcss/forms"; */
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
