@@ -10,6 +10,7 @@ const ProgressBox = ({ pomodoroSessions, totalPomodoroGoal, tasksCompleted, tota
         <p>🕒 Pomodoro Sessions: <strong>{pomodoroSessions}/{totalPomodoroGoal}</strong></p>
         <p>✅ Tasks Completed: <strong>{tasksCompleted}/{totalTasks}</strong></p>
         <p>🎯 Focus Time Today: <strong>{pomodoroSessions * 25} mins</strong></p>
+        
         {/* <p>🔥 Streak: <strong>{streakDays} days</strong></p> */}
       </div>
     </div>
