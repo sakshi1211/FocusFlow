@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./Pomodoro.css"
+import "./Pomodoro.css";
 import MusicPlayer from "./MusicPlayer";
 
 const PomoFocus = () => {

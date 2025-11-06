@@ -4,6 +4,7 @@ import { useTheme } from "./ThemeContext"
 import logo from "../assets/FocusFlow2.png";
 import "./Navbar.css";
 
+
 const Navbar = ({ onLogout, isSignedIn }) => {
 
     const { darkMode, toggleTheme } = useTheme();
