@@ -32,7 +32,7 @@ const SignIn = ( {onSignIn} ) => {
   };
 
   return (
-    <div className="flex justify-center text-white items-center">
+    <div className="flex justify-cente items-center bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
       <div className="p-8 mt-25 shadow-lg w-96 border border-gray-500 rounded-2xl">
         <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
 

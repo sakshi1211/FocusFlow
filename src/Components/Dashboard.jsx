@@ -13,9 +13,9 @@ const Dashboard = () => {
   const [editIndex, setEditIndex] = useState(null);
   const [taskInput, setTaskInput] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [qoute, setQoute] = useState("");
+  const [quote, setQuote] = useState("");
   const [completedPomodoros, setCompletedPomodoros] = useState(0);
-  
+
 
   const quotes = [
     "💪 Push yourself, because no one else is going to do it for you!",
@@ -37,13 +37,14 @@ const Dashboard = () => {
 
   useEffect(() => {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    setQoute(randomQuote);
+    setQuote(randomQuote);
   }, []);
 
   useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks" || []));
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(savedTasks);
-  }, [])
+  }, []);
+
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -70,7 +71,7 @@ const Dashboard = () => {
   }
 
   const handleEdit = (index) => {
-    setTaskInput(tasks[index]);
+    setTaskInput(tasks[index].text);
     setEditIndex(index);
   }
 
@@ -181,7 +182,7 @@ const Dashboard = () => {
             </div>
 
 
-            <p className="text-center mt-5">{qoute}</p>
+            <p className="text-center mt-5">{quote}</p>
 
           </div>
 
@@ -199,12 +200,12 @@ const Dashboard = () => {
           </div>
 
           <div className="dash-progress boxShadow rounded-2xl">
-             <Progress
+            <Progress
               pomodoroSessions={completedPomodoros}
               totalPomodoroGoal={5}
               tasksCompleted={completedTasks}
               totalTasks={tasks.length}
-              // streakDays={streak}
+            // streakDays={streak}
             />
           </div>
 
