@@ -1,0 +1,20 @@
+
+
+.profile-container{
+    height: 88vh;
+    width: 100vw;
+}
+
+.logout-btn{
+    background-color: #7f7f7f2f;
+}
+
+.logout-btn:hover{
+    cursor: pointer;
+    background-color: #c5585823;
+}
+
+.profile-img{
+    background-color: #69696915;
+    padding: 10px;
+}
