@@ -6,7 +6,8 @@ import Navbar from './Components/Navbar';
 import SignIn from './Components/SignIn.jsx';
 import SignUp from './Components/SignUp.jsx';
 import Dashboard from './Components/Dashboard.jsx';
-import PomoFocus from './Components/PomoFocus.jsx'
+import PomoFocus from './Components/PomoFocus.jsx';
+import Profile from './Components/Profile.jsx';
 
 function App() {
 
@@ -75,6 +76,13 @@ function App() {
           element={
             <PomoFocus />
           }
+        />
+
+        <Route
+        path="/profile"
+        element={
+          <Profile />
+        }
         />
 
       </Routes>
