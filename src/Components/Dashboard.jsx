@@ -97,20 +97,20 @@ const Dashboard = () => {
   const completedTasks = tasks.filter(t => t.completed).length;
 
   return (
-    <div className="dash-root flex flex-col justify-center align-middle bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
+    <div className="dash-root bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
 
       {showPopup &&
         <Popup username={userName || "User"} onClose={() => setShowPopup(false)} />
       }
 
-      <div className="dash-main-box flex justify-evenly">
+      <div className="dash-main-box">
 
         <div className="left-box">
           <h3 className="font-bold text-xl">Let's Plan Today {userName} ! 🔥</h3>
 
           <div className="left-inner-box">
 
-            <div className="add-task-box flex-1 p-6 mt-4 w-150">
+            <div className="add-task-box flex-1 mt-4 w-150">
 
               <div className="flex mb-4 gap-2">
                 <input
@@ -182,7 +182,7 @@ const Dashboard = () => {
             </div>
 
 
-            <p className="text-center mt-5">{quote}</p>
+            <p className="quote-box text-center mt-5">{quote}</p>
 
           </div>
 

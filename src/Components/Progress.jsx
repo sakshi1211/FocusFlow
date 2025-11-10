@@ -2,7 +2,7 @@ import React from "react";
 
 const ProgressBox = ({ pomodoroSessions, totalPomodoroGoal, tasksCompleted, totalTasks, streakDays }) => {
   return (
-    <div className="py-2 px-5 flex flex-col justify-between bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
+    <div className="py-2 px-5 flex flex-col justify-between items-center bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
       
       <h2 className="text-lg font-bold mb-2">📊 Progress Summary</h2>
 

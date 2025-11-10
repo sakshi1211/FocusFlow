@@ -29,6 +29,13 @@ nav {
   box-shadow: 0px 2px 10px 0px rgba(190, 190, 190, 0.75);
 }
 
+.nav-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
 .dark nav{
   box-shadow: 0px 3px 10px 0px rgba(49, 49, 49, 0.75);
 }
@@ -38,4 +45,12 @@ nav {
   padding: 7px 10px;
   font-weight: 500;
   border-radius: 7px;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .logo{
+    width: 120px;
+  }
 }

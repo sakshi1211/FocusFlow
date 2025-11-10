@@ -35,6 +35,7 @@ body {
 .app-root{
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 button{

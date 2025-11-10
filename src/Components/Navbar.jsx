@@ -11,7 +11,7 @@ const Navbar = ({ onLogout, isSignedIn }) => {
 
     return (
         <nav className="bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
-            <div className="nav-div max-w-7xl mx-auto px-10 py-1 flex justify-between items-center">
+            <div className="nav-div">
 
                 <Link to="/">
                     <img src={logo} className="logo" />

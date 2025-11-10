@@ -2,8 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./Pomodoro.css";
 
-
-
 const Pomodoro = () => {
 
     const [time, setTime] = useState(25 * 60);
@@ -45,13 +43,13 @@ const Pomodoro = () => {
 
             <h1 className="text-xl font-bold">🕒 Pomodoro Timer</h1>
             <p className="p-1">Set a Pomodoro and get focused!</p>
-            <div className="text-4xl font-semibold mb-4">
+            <div className="text-4xl font-semibold">
                 {formatTime(time)}
             </div>
-            <div className="w-full">
+            <div className="pomo-btns w-full">
                 <button
                     onClick={() => setIsRunning(!isRunning)}
-                    className={`px-5 py-2 w-1/4 rounded-lg font-medium 
+                    className={`px-5 py-2 rounded-lg font-medium 
                     ${isRunning ? "bg-yellow-600 hover:bg-yellow-500" :
                             "bg-green-600 hover:bg-green-500"
                         } text-white`}
@@ -60,7 +58,7 @@ const Pomodoro = () => {
                 </button>
                 <button
                     onClick={handleReset}
-                    className="px-5 py-2 w-1/4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg font-medium"
+                    className="px-5 py-2 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg font-medium"
                 >
                     Reset
                 </button>

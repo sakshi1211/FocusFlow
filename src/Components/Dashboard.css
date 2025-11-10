@@ -8,8 +8,8 @@
   --color-text-dark: #dddede;
 }
 
-*{
-  /* overflow-x: hidden; */
+* {
+  /* overflow: hidden; */
   box-sizing: border-box;
 }
 
@@ -32,6 +32,8 @@
 .dash-main-box {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .Li-items {
@@ -53,7 +55,9 @@
   overflow-y: scroll;
   height: 82%;
   width: 95%;
+  margin-left: 40px;
 }
+
 
 .add-task-box::-webkit-scrollbar {
   width: 5px;
@@ -97,8 +101,10 @@
 .left-box {
   width: 65%;
   height: 100%;
-  padding-left: 25px;
-  padding-top: 20px;
+}
+
+.left-box h3{
+  margin: 20px;
 }
 
 .right-box {
@@ -127,23 +133,93 @@
 
 /* Music */
 
-.dash-music{
+.dash-music {
   width: 80%;
   height: 25%;
   padding: 5px;
 }
 
-.dash-progress{
+.dash-progress {
   width: 80%;
   height: 27%;
   padding: 5px;
 }
 
 .music-main-box {
-  width: 90%;
+  width: 95%;
 }
 
 .musicH1 {
   width: 80%;
   border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+}
+
+
+/* Responsive */
+
+@media (max-width:1040px) {
+  .left-box {
+    width: 58%;
+  }
+
+  .right-box {
+    width: 42%
+  }
+
+  .music-main-box h2 {
+    font-size: 23px;
+  }
+}
+
+@media (min-height:1023px) and (max-height:1367px) {
+  .dash-root {
+    overflow: scroll;
+  }
+
+  nav {
+    height: 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash-root {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .dash-main-box {
+    height: auto;
+    display: block;
+    overflow-y: auto;
+  }
+
+  .left-box {
+    width: 90%;
+    height: 540px;
+    border-bottom: 1px solid gray;
+    border-right: none;
+    padding-bottom: 10px;
+    margin: 15px;
+  }
+
+  .right-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .add-task-box {
+    padding: 5px;
+    margin-left: 10px;
+    height: 76%;
+  }
+
+  .quote-box{
+    padding: 10px;
+    height: 90px;
+  }
+
+  .left-inner-box {
+    border-right: none;
+  }
+
 }

@@ -53,7 +53,7 @@ const MusicPlayer = () => {
 
     return (
         <div className="music-main-box bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
-            <div className="p-4 rounded-2xl text-center flex flex-col items-center">
+            <div className="py-4 px-3 rounded-2xl text-center flex flex-col items-center">
                 <h2 className="musicH1 text-2xl font-bold mb-4 pb-3">🎧 Focus Music</h2>
 
                 <audio ref={audioRef} src={tracks[currentTrack].src} />
