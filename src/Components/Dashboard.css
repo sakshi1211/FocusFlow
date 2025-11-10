@@ -8,6 +8,11 @@
   --color-text-dark: #dddede;
 }
 
+*{
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
 /* Dark mode class sets the dark colors */
 .dark {
   --color-bg-light: #111112;
@@ -16,16 +21,17 @@
 
 
 .dash-root {
-  /* box-sizing: border-box; */
-  width: 100vw;
+  width: 100%;
+  padding-top: 10px;
+  height: 86%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .dash-main-box {
-  height: 82vh;
-  width: 98%;
+  height: 100%;
+  width: 100%;
 }
 
 .Li-items {
@@ -90,11 +96,14 @@
 
 .left-box {
   width: 65%;
+  height: 100%;
+  padding-left: 25px;
+  padding-top: 20px;
 }
 
 .right-box {
   width: 35%;
-  height: 98%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,6 +114,7 @@
 .pomodoro {
   height: 40%;
   width: 80%;
+  display: flex;
 }
 
 .task-text {

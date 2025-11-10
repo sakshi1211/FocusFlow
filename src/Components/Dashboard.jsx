@@ -97,7 +97,7 @@ const Dashboard = () => {
   const completedTasks = tasks.filter(t => t.completed).length;
 
   return (
-    <div className="dash-root flex flex-col p-4 mx-7 my-5 justify-center align-middle bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
+    <div className="dash-root flex flex-col justify-center align-middle bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
 
       {showPopup &&
         <Popup username={userName || "User"} onClose={() => setShowPopup(false)} />

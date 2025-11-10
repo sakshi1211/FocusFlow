@@ -30,64 +30,66 @@ function App() {
   }, [isSignedIn]);
 
   return (
-    <Router>
-      <Navbar isSignedIn={isSignedIn} onLogout={() => setIsSignedIn(false)} />
+    <div className="app-root">
+      <Router>
+        <Navbar isSignedIn={isSignedIn} onLogout={() => setIsSignedIn(false)} />
 
-      <Routes>
-        {/* Home */}
-        <Route
-          path="/"
-          element={!isSignedIn ? <Home /> : <Navigate to="/dashboard" />}
-        />
+        <Routes>
+          {/* Home */}
+          <Route
+            path="/"
+            element={!isSignedIn ? <Home /> : <Navigate to="/dashboard" />}
+          />
 
-        {/* Sign Up */}
-        <Route
-          path="/signup"
-          element={<SignUp onSignUp={() => setIsRegistered(true)} />}
-        />
+          {/* Sign Up */}
+          <Route
+            path="/signup"
+            element={<SignUp onSignUp={() => setIsRegistered(true)} />}
+          />
 
-        {/* Sign In */}
-        <Route
-          path="/signin"
-          element={
-            isRegistered ? (
-              <SignIn onSignIn={() => setIsSignedIn(true)} />
-            ) : (
-              <Navigate to="/signup" />
-            )
-          }
-        />
+          {/* Sign In */}
+          <Route
+            path="/signin"
+            element={
+              isRegistered ? (
+                <SignIn onSignIn={() => setIsSignedIn(true)} />
+              ) : (
+                <Navigate to="/signup" />
+              )
+            }
+          />
 
-        {/* Dashboard */}
-        <Route
-          path="/dashboard"
-          element={
-            isSignedIn ? (
-              <Dashboard onLogout={() => setIsSignedIn(false)} />
-            ) : (
-              <Navigate to="/signin" />
-            )
-          }
-        />
+          {/* Dashboard */}
+          <Route
+            path="/dashboard"
+            element={
+              isSignedIn ? (
+                <Dashboard onLogout={() => setIsSignedIn(false)} />
+              ) : (
+                <Navigate to="/signin" />
+              )
+            }
+          />
 
-        {/* PomoFocus */}
-        <Route
-          path="/pomofocus"
-          element={
-            <PomoFocus />
-          }
-        />
+          {/* PomoFocus */}
+          <Route
+            path="/pomofocus"
+            element={
+              <PomoFocus />
+            }
+          />
 
-        <Route
-        path="/profile"
-        element={
-          <Profile />
-        }
-        />
+          <Route
+            path="/profile"
+            element={
+              <Profile />
+            }
+          />
 
-      </Routes>
+        </Routes>
 
-    </Router>
+      </Router>
+    </div>
   );
 }
 
