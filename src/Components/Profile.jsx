@@ -4,7 +4,7 @@ import ProfileImg from "../assets/Profile-img.png"
 import "./Profile.css";
 
 
-const Profile = () => {
+const Profile = ({onLogout}) => {
 
     const [userName, setUserName] = useState("");
     const navigate = useNavigate();
@@ -18,8 +18,11 @@ const Profile = () => {
 
     const handleLogout = () => {
         localStorage.removeItem("userInfo");
+        localStorage.removeItem("isSignedIn");
+        localStorage.removeItem("isRegistered");
         localStorage.removeItem("seenWelcome");
-        navigate("/signup");
+        onLogout();
+        navigate("/");
     }
 
     return (

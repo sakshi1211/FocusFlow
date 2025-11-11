@@ -29,12 +29,11 @@
 .pomo-outer-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .pomo-boxP {
-    height: 90%;
+    height: 38%;
     width: 28%;
     padding: 25px 5px;
     background-color: rgba(186, 186, 186, 0.219);

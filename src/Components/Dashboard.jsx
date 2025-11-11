@@ -99,7 +99,7 @@ const Dashboard = () => {
   return (
     <div className="dash-root bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
 
-      {showPopup &&
+       {showPopup &&
         <Popup username={userName || "User"} onClose={() => setShowPopup(false)} />
       }
 

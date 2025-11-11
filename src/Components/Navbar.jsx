@@ -44,10 +44,10 @@ const Navbar = ({ onLogout, isSignedIn }) => {
                     </NavLink>
                 </div>
 
-                <div className="flex items-center space-x-4">
+                <div className="sunMoon-box flex items-center space-x-4">
                     <button
                         onClick={toggleTheme}
-                        className="p-2 rounded-full bg-gray-100 dark:bg-slate-700 hover:scale-105 transition"
+                        className="sunMoon p-2 rounded-full bg-gray-100 dark:bg-slate-700 hover:scale-105 transition"
                     >
                         {darkMode ? (
                             <Sun className="w-5 h-5 text-yellow-400" />
@@ -67,7 +67,7 @@ const Navbar = ({ onLogout, isSignedIn }) => {
                     ) : (
                         <Link to="/signin">
                             <button
-                                className="bg-indigo-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">
+                                className="signin-btn bg-indigo-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">
                                 Sign In
                             </button>
                         </Link>

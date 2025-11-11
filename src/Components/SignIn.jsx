@@ -61,7 +61,7 @@ const SignIn = ( {onSignIn} ) => {
 
           <button
             type="submit"
-            className="w-50 bg-white font-bold text-black py-3 my-4 rounded-lg hover:bg-blue-100 transition"
+            className="w-35 font-bold bg-indigo-500 text-white py-3 my-4 rounded-lg hover:bg-indigo-600 transition"
           >
             Sign In
           </button>

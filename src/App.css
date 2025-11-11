@@ -3,7 +3,7 @@
 /* Light & Dark mode variables */
 :root {
   --color-bg-light: #f2f2f2;
-  --color-bg-dark: #131313;  
+  --color-bg-dark: #131313;
   --color-text-light: #18212f;
   --color-text-dark: #e2e8f0;
 }
@@ -14,7 +14,9 @@
   --color-text-light: #e2e8f0;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -22,6 +24,8 @@ html, body, #root {
 }
 
 body {
+  position: absolute;
+  overflow-x: hidden;
   background-color: var(--color-bg-light);
   color: var(--color-text-light);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -32,12 +36,28 @@ body {
   color: var(--color-text-dark);
 }
 
-.app-root{
+.app-root {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 
-button{
+button {
   cursor: pointer;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+@media (min-height: 800px) {
+  .app-root {
+    overflow: auto;
+  }
+}
+@media (max-width: 480px) {
+  .app-root {
+    overflow: auto;
+  }
 }
