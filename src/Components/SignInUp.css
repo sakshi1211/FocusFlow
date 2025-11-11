@@ -1,0 +1,25 @@
+.signup-box {
+    width: 440px;
+}
+
+.signup-box input {
+    width: 80%;
+}
+
+.signin-box {
+    width: 400px;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .signup-box {
+        width: 90%;
+        margin: 30px;
+    }
+
+    .signin-box {
+        width: 90%;
+    }
+
+}

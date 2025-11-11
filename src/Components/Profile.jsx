@@ -28,9 +28,9 @@ const Profile = ({onLogout}) => {
     return (
 
         <div className="profile-container relative items-center p-6 bg-[--color-bg-light] dark:bg-[--color-bg-dark] text-[--color-text-light] dark:text-[--color-text-dark] transition-colors duration-300">
-
+ 
             <div>
-                <div className="profile-info shadow-lg p-6 rounded-2xl text-center">
+                <div className="profile-info p-6 text-center">
 
                     <img
                         src={ProfileImg}

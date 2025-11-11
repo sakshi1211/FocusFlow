@@ -62,6 +62,10 @@ const Navbar = ({ onLogout, isSignedIn }) => {
                                 <i className="bi bi-person-circle pe-2"></i>
                                 Profile
                             </button>
+
+                            <button className="profile-icon text-indigo-400">
+                                <i className="bi bi-person-circle pe-2"></i>
+                            </button>
                         </Link>
 
                     ) : (

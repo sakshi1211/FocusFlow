@@ -67,3 +67,10 @@
 .pomo-btns button{
     margin: 0px 10px;
 }
+
+@media (max-width: 480px){
+    .pomo-box { 
+        padding: 25px;
+        gap: 10px;
+    }
+}

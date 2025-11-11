@@ -50,10 +50,17 @@ nav {
   border-radius: 7px;
 }
 
+.profile-icon {
+  display: none;
+  background-color: #9f9f9f2d;
+  padding: 3px 0px 3px 7px;
+  border-radius: 20px;
+}
+
 /* Responsive */
 
-@media (max-width: 1040px){
-    nav{
+@media (max-width: 1040px) {
+  nav {
     height: 80px;
   }
 }
@@ -62,11 +69,27 @@ nav {
   .logo {
     width: 120px;
   }
-  .signin-btn{
+
+  .signin-btn {
     font-size: 12px;
     padding: 6px 11px;
   }
-  nav{
+
+  nav {
     height: 60px;
+    padding-top: 6px;
   }
+
+  .profile-btn {
+    font-size: 14px;
+  }
+
+  .profile-btn {
+    display: none;
+  }
+
+  .profile-icon {
+    display: block;
+  }
+
 }

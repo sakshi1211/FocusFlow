@@ -224,5 +224,13 @@
   .left-inner-box {
     border-right: none;
   }
+  .right-box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .dash-music, .pomodoro, .dash-progress {
+    width: 85%;
+    margin-bottom: 20px;
+  }
 
 }
